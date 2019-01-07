@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import 'material-override';
+@import 'material-icons-override';
+
+html {
+    font-family: $font-stack;
+    font-size: $primary-font-size; // all 'rem' units will be based on that root element font-size value
+}
+
+body { 
+    margin: $primary-margin;
+    background-color: $primary-background-color;
+    color: $primary-color;
+}
+
+table {
+    width: 100%;
+}
+
+/* FORM DESIGN START */
+.fo-form {
+  min-width: 12.5rem;
+  max-width: 41.5rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.fo-form-field-default-width {
+    margin-bottom: 0.5rem;
+  }
+
+.fo-form-field-full-width {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.fo-form-button-group {
+    padding-top: 0.5rem;
+    float: right;
+
+    & button {
+        margin-left: 0.5rem;
+    }
+}
+/* FORM DESIGN END */
+
+/* NAVIGATION STARTS */
+/* NAVIGATION ENDS */
+
+/* POSITIONING STARTS */
+.fo-text-center {
+    text-align: center;
+}
+
+// TODO: think how to position items within container properly
+// reducing 'width' from 40px decreeses distance between elements within container - better looking
+// However, this breaks angular material item click effect. 
+.fo-button-link-container {
+    & a {
+        // padding-left: 0.5rem;
+
+        &.mat-icon-button {
+            // width: 1.5rem !important;
+        }
+    }; 
+    & button {
+        // padding-left: 0.5rem;
+        // width: 1.5rem !important;
+    }
+}
+
+.fo-sticky-add-button {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+/* POSITIONING ENDS */
+
+/* FORMATTING STARTS */
+.fo-version-info {
+    font-size: 0.65rem; // ~8pt
+    float: right;
+} 
+
+.fo-secondary-text {
+    // color: $secondary-color;
+    opacity: 0.7;
+    font-size: 0.7rem;
+}
+
+.fo-highlight-color {
+    color: $highlight-color;
+}
+
+/* FORMATTING ENDS */

@@ -1,0 +1,116 @@
+{
+  "configVersion": 1,
+  "appData": "[fo] any data that describes this particular version of the app",
+  "index": "foweb/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "foweb/5.daa29254a4f44df8f231.js",
+        "foweb/6.fe9ea20f6146c05ac1f1.js",
+        "foweb/assets/favicon.ico",
+        "foweb/common.bd2774ddbb4c65304bd1.js",
+        "foweb/index.html",
+        "foweb/main.301b8055e094398bd991.js",
+        "foweb/manifest.json",
+        "foweb/polyfills.1ce38f82dba67bf8cf29.js",
+        "foweb/runtime.60dfaff523f9998e141a.js",
+        "foweb/styles.f3785d47e95729a2072f.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "fonts",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "foweb/MaterialIcons-Regular.012cf6a10129e2275d79.woff",
+        "foweb/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2",
+        "foweb/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "foweb/assets/css/_material-icons-override.scss",
+        "foweb/assets/css/_material-override.scss",
+        "foweb/assets/css/_variables.scss",
+        "foweb/assets/css/bootstrap-grid.css",
+        "foweb/assets/css/dh-custom.scss",
+        "foweb/assets/icons/icon-128x128.png",
+        "foweb/assets/icons/icon-144x144.png",
+        "foweb/assets/icons/icon-152x152.png",
+        "foweb/assets/icons/icon-192x192.png",
+        "foweb/assets/icons/icon-384x384.png",
+        "foweb/assets/icons/icon-512x512.png",
+        "foweb/assets/icons/icon-72x72.png",
+        "foweb/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-people",
+      "patterns": [
+        "\\/api\\/people\\/[^/]*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "foweb/5.daa29254a4f44df8f231.js": "8e7e1b5150ed67f0b94031866e9c4e4d04763467",
+    "foweb/6.fe9ea20f6146c05ac1f1.js": "8b45331dd5df45309a37a4252961c54a9da6cfe9",
+    "foweb/MaterialIcons-Regular.012cf6a10129e2275d79.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
+    "foweb/MaterialIcons-Regular.570eb83859dc23dd0eec.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
+    "foweb/MaterialIcons-Regular.a37b0c01c0baf1888ca8.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
+    "foweb/assets/css/_material-icons-override.scss": "77ca820acc0f775b435d6d8e1d1563c56068de48",
+    "foweb/assets/css/_material-override.scss": "18ed414fb7e99c3f628dadf0b5715db690d2d6bd",
+    "foweb/assets/css/_variables.scss": "11eac725719906c5ffc2204bb00bf673f657a9d3",
+    "foweb/assets/css/bootstrap-grid.css": "f030342dabeb7b04b487b91e5f082b5053006c73",
+    "foweb/assets/css/dh-custom.scss": "54a66540404a6a66d0e1e469c8eb2bcee888b92b",
+    "foweb/assets/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "foweb/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "foweb/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "foweb/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "foweb/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "foweb/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "foweb/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "foweb/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "foweb/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "foweb/common.bd2774ddbb4c65304bd1.js": "fbdd0e6af4da743ae1a261ec21898c1769ac8d47",
+    "foweb/index.html": "f74b5ac29343f0ec919c9ee352a433de627ff826",
+    "foweb/main.301b8055e094398bd991.js": "b9e73b118dbc415fb4506ad41d49432d310056c7",
+    "foweb/manifest.json": "ee68265038ebf23bd1cd8e46d185b47036221a83",
+    "foweb/polyfills.1ce38f82dba67bf8cf29.js": "35efac68587d6024202d011a4139365d4b37942a",
+    "foweb/runtime.60dfaff523f9998e141a.js": "4c267c389215ff37ddead1de389c94d852a1fdd3",
+    "foweb/styles.f3785d47e95729a2072f.css": "09b5cbbab6dab7d416382f1080ce95de0b3fb61a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
