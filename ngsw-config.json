@@ -1,0 +1,54 @@
+{
+  "appData": "[fo] any data that describes this particular version of the app",
+  "index": "/index.html",
+  "dataGroups": [
+    {
+      "name": "api-people",
+      "urls": [
+        "/api/people/*"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "timeout": "10s",
+        "maxAge": "3d",
+        "maxSize": 100
+      }
+    }
+  ],
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/favicon.ico",
+          "/index.html",
+          "/*.css",
+          "/*.js",
+          "/manifest.json"
+        ]
+      }
+    },
+    {
+      "name": "fonts",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/*.woff",
+          "/*.woff2",
+          "/*.ttf"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ]
+      }
+    }
+  ]
+}

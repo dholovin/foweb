@@ -1,0 +1,12 @@
+<mat-radio-group (change)="changeViewMode($event)" [(ngModel)]="peopleFilterState.viewMode">
+  <mat-radio-button [value]=PeopleViewMode.Table>by Name</mat-radio-button>
+  <mat-radio-button [value]=PeopleViewMode.Tree>by Associations</mat-radio-button>
+</mat-radio-group>
+
+<mat-divider></mat-divider>
+
+<span [ngSwitch]="peopleFilterState.viewMode">
+    <fo-people-table-view *ngSwitchDefault [filterString]="peopleFilterState.filterString"></fo-people-table-view>
+    <fo-people-tree-view *ngSwitchCase="PeopleViewMode.Tree" [filterString]="peopleFilterState.filterString">
+    </fo-people-tree-view>
+</span>

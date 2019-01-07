@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome with ng serve",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceRoot}"
+        },       
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome with http-server (support Angular ServiceWorker)",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/fo.Web"
+        },
+        {
+            "name": "Launch Chrome with ng test",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:9876/debug.html",
+            "webRoot": "${workspaceRoot}/fo.Web"
+        },
+        {
+            "name": "Launch ng e2e",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/fo.Web/node_modules/protractor/bin/protractor",
+            "protocol": "inspector",
+            "args": [
+                "${workspaceRoot}/fo.Web/e2e/protractor.conf.js"
+            ]
+        }
+    ]
+}

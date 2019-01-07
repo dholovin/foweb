@@ -1,0 +1,49 @@
+<!-- Bootrsap Grid system allows .col (-sm is default), -sm, -md, -lg prefixes to represent screens with different resolution
+To create responsive design we may mix column definitions (from smaller to bigger screens, .col -> col-lg)
+i.e. Stack the columns on mobile by making one full-width and the other half-width
+<div class="row">
+  <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+</div> -->
+<div class='fo-text-center' [@foFadeAnimation]>
+  <div class='container'>
+    <div class='row justify-content-center'>
+      <div class='col-3'>
+        <a [routerLink]="[ '/reminders' ]">
+          <i class="material-icons md-dark md-86" matTooltipPosition='before' matTooltip="Reminders">assignment</i>
+        </a>
+      </div>
+      <div class='col-3'>
+        <a [routerLink]="[ '/shopping' ]">
+          <i class="material-icons md-dark md-86" matTooltipPosition='before' matTooltip="Shopping">shop</i>
+        </a>
+      </div>
+    </div>
+    <div class='row justify-content-center'>
+      <div class='col-3'>
+        <a [routerLink]="[ '/people' ]">
+          <i class="material-icons md-dark md-86" matTooltipPosition='before' matTooltip="People">face</i>
+        </a>
+      </div>
+      <div class='col-3'>
+        <!-- <a [routerLink]="[ '/notes' ]"> -->
+          <i class="material-icons md-dark md-86 md-inactive" matTooltipPosition='before' matTooltip="Notes">list</i>
+        <!-- </a> -->
+      </div>
+    </div>
+    <div class='row justify-content-center'>
+      <div class='col-3'>
+        <!-- <a [routerLink]="[ '/tables' ]"> -->
+          <i class="material-icons md-dark md-86 md-inactive" matTooltipPosition='before' matTooltip="Tables">grid_on</i>
+          <!-- <i class="material-icons md-dark md-86 md-inactive" matTooltipPosition='before' matTooltip="Tables">loyalty</i> -->
+          <!-- <i class="material-icons md-dark md-86 md-inactive" matTooltipPosition='before' matTooltip="Tables">card_giftcard</i> -->
+        <!-- </a> -->
+      </div>
+      <div class='col-3'>
+        <a [routerLink]="[ '/settings' ]">
+          <i class="material-icons md-dark md-86" matTooltipPosition='before' matTooltip="Settings">settings</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

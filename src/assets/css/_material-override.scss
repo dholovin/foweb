@@ -1,0 +1,18 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+mat-radio-button {
+    margin-right: 1rem;
+}
+
+mat-divider {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+}
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    padding-right: 0.8rem !important;
+}
+
+.mat-chip-list-wrapper {
+    margin: 0 -0.3rem !important;
+}

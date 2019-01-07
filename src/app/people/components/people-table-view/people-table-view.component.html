@@ -1,0 +1,72 @@
+<div *ngIf="isBusy">
+  <fo-loading></fo-loading>
+</div>
+
+<div class="fo-sticky-add-button">
+  <a [routerLink]="[ 'create' ]">
+    <!--<i class="material-icons fo-highlight-color md-64">add_circle</i>-->
+    <i class="material-icons md-dark md-64">add_circle</i>
+  </a>
+</div>
+
+<div>
+  <mat-form-field style="width: 100%">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter" [(ngModel)]="filterString">
+  </mat-form-field>
+
+  <table mat-table [dataSource]="peopleDataSource" class="mat-elevation-z8" matSort matSortActive="name" matSortDirection="asc">
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header style='min-width: 8rem'> Name </th>
+      <td mat-cell *matCellDef="let person"> {{person.name}} </td>
+    </ng-container>
+
+    <!-- Place Column -->
+    <ng-container matColumnDef="place">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header style='min-width: 8rem'> Place </th>
+      <td mat-cell *matCellDef="let person"> {{person.place}} </td>
+    </ng-container>
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header style='min-width: 6rem'> Date </th>
+      <td mat-cell *matCellDef="let person"> {{person.date | date }} </td>
+    </ng-container>
+
+    <!-- Note Column -->
+    <ng-container matColumnDef="note">
+      <th mat-header-cell *matHeaderCellDef style='min-width: 100px'> Note </th>
+      <td mat-cell *matCellDef="let person"> {{person.note}} </td>
+    </ng-container>
+
+    <!-- Associations Column -->
+    <ng-container matColumnDef="associations">
+      <th mat-header-cell *matHeaderCellDef> Associations </th>
+      <td mat-cell *matCellDef="let person">
+        <mat-chip-list>
+          <mat-chip color="accent" selected *ngFor="let association of person.associations">
+            {{association}}
+          </mat-chip>
+        </mat-chip-list>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="toolbar">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let person">
+        <div class="fo-button-link-container d-flex">
+          <a mat-icon-button routerLink="{{person.id}}">
+            <i class="material-icons md-dark md-18">edit</i>
+          </a>
+          <button mat-icon-button (click)="delete(person.id)">
+            <i class="material-icons md-dark md-18">delete</i>
+          </button>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="getDisplayedColumns();"></tr>
+    <tr mat-row *matRowDef="let row; columns: getDisplayedColumns();"></tr>
+  </table>
+</div>
